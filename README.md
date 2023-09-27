@@ -2,7 +2,7 @@
 ResourceX - VIT Chennai's main club website 
 
 
-# TODO: 
+# TO DO: 
 
 - Update top nav bar completely + add RX logo (tedx)
 - create entire new landing page + scroll effect (esummit) + blurred gradient BG (tedx)
