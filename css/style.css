@@ -128,7 +128,7 @@ html{
       right: 0;
       bottom: 0;
       background: inherit;
-      filter: blur(4px) brightness(70%);
+      filter: blur(5px) brightness(70%);
 }
 .home-content{
       position: relative;
