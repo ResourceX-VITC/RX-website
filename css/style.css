@@ -1,12 +1,14 @@
-*
-{
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+*{
       margin: 0;
       padding: 0;
-      outline: 0;
-      border: 0;
+      box-sizing: border-box;
+      font-family: "Popins",sans-serif;
       text-decoration: none;
-      list-style: none; /*list style none is to remove bullet from list items */
-      box-sizing: border-box; /*The box-sizing property allows us to include the padding and border in an element's total width and height*/      
+}
+html{
+      scroll-behavior: smooth;
 }
 :root
 {
@@ -28,13 +30,173 @@
 
       --transition: all 400ms ease;
 }
-body
-{
-      font-family: 'Montserrat', sans-serif;
-      line-height: 1.7; 
-      color: var(--color-white);
-      background: var(--color-bg);
+.max-width{
+      max-width: 1300px;
+      padding: 0 80px;
+      margin: auto;
 }
+/*navbar styling*/
+
+.navbar{
+      position: fixed;
+      width: 100%;
+      z-index: 999;
+      padding: 30px 0;
+      transition: all 0.3 ease;
+}
+
+.navbar.sticky{
+      padding: 15px 0;
+      background: #000;
+}
+
+.navbar .max-width{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+}
+.navbar .logo a{
+      color: #fff;
+      font-size: 35px;
+      font-weight: 600;
+}
+.navbar .logo a span{
+      color:#f7c95b;
+      transition: all 0.3s ease;
+}
+
+.navbar.sticky .logo a span{
+      color:#f7c95b;
+
+}
+
+.navbar .menu li{
+      display: none;
+      display: inline-block;
+}
+
+.navbar .menu li a{
+      display: block;
+      color: #fff;
+      font-size: 20px;
+      font-weight: 500;
+      margin-left:50px;
+      transition: color 0.3 ease;
+      position: relative;
+}
+
+.navbar .menu li a::before{
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: #fff;
+      transition: .3s;
+
+}
+
+.navbar .menu li a:hover::before{
+      width: 100%;
+}
+
+/* home page styling*/
+
+.home{
+      display: flex;
+      /*background: linear-gradient(109.6deg, rgb(43, 1, 91) 13.4%, rgb(122, 2, 54) 100.2%);*/
+      background:url(/images/DSC04580.JPG);
+      background-size: cover;
+      background-attachment: fixed;
+      color: white;
+      height: 100vh;
+      color: #fff;
+      min-height:500px;
+      background-size: cover;
+      background-attachment: fixed;
+      font-family: 'Ubuntu',sans-serif;
+      position: relative;
+}
+
+.home::before{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: inherit;
+      filter: blur(7px) brightness(75%);
+}
+.home-content{
+      position: relative;
+      z-index: 1;
+}
+
+.home h1{
+      font-size:7em;
+      text-align: center;
+      margin: 0;
+}
+.home h1 span{
+      color: #f7c95b;
+
+}
+
+/*scroll animation*/
+.scroll-down{
+      background: none;
+      width: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      bottom:-32vh;
+      left: 50%;
+      transform: translateX(-50%);
+}
+
+.scroll-animation{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+}
+
+.scroll-animation span{
+      display: block;
+      width: 30px; 
+      height: 30px;
+      border-bottom: 4px solid white;
+      border-right: 4px solid white;
+      transform: rotate(45deg);
+      animation: scroll 2s linear infinite;
+      margin: -3px;
+}
+ 
+.scroll-animation span:nth-child(2){
+      animation-delay: -0.2s;
+}
+
+.scroll-animation span:nth-child(3){
+      animation-delay: -0.4s;
+}
+
+@keyframes scroll{
+      0% {
+            opacity: 0;
+            transform: rotate(45deg) translate(-20px,-20px);
+      }
+      50%{
+            opacity: 1;
+      }
+      100%{
+            opacity: 0;
+            transform: rotate(45deg) translate(20px,20px);
+      }
+}
+
 /* 1rem = 16px */
 .container
 {
@@ -99,63 +261,6 @@ img
 {
       background: var(--color-danger);
       color: var(--color-white);
-}
-/* =========================NAVBAR======================*/
-nav
-{
-      background-color: transparent;
-      width: 100vw;
-      height: 80px;
-      position: fixed;
-      top: 0;
-      z-index: 11;
-}
-.nav_container
-{
-      height: 100%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-}
-nav button
-{
-      display: none;
-}
-.nav_menu
-{
-      display: flex;
-      align-items: center;     
-      gap: 4rem;
-}
-.nav_menu a
-{
-      font-size: 0.9rem;
-      transition: var(--transition);
-}
-.nav_menu a:hover
-{
-      color: var(--color-bg2);
-}
-/* =====================HEADER=================== */
-header
-{
-      position: relative;
-      top: 5rem;
-      overflow: hidden;
-      height: 70vh;
-      margin-bottom: 5rem;
-}
-.header_container
-{
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      align-items: center;
-      gap: 5rem;
-      height: 100%;
-}
-.header_left p
-{
-      margin: 1rem 0 2.4rem;
 }
 
 /* =====================CATEGORIES=================== */

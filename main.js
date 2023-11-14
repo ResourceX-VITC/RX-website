@@ -1,10 +1,15 @@
-//change navbar styles on scrroll
-window.addEventListener('scroll', () => {
-      document.querySelector('nav').classList.toggle
-      ('window-scroll',window.scrollY > 0)
-})
-
+$(document).ready(function(){
+      $(window).scroll(function(){
+          // sticky navbar on scroll script
+          if(this.scrollY > 20){
+              $('.navbar').addClass("sticky");
+          }else{
+              $('.navbar').removeClass("sticky");
+          }
+      });
+});
 //show/hide faq answer
+      
 
 const faqs = document.querySelectorAll('.faq');
 faqs.forEach(faq => {
