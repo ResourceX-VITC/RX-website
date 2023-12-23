@@ -1,3 +1,5 @@
+
+const faqbox = document.querySelectorAll('.faqbox');
 $(document).ready(function(){
       $(window).scroll(function(){
           // sticky navbar on scroll script
@@ -7,6 +9,21 @@ $(document).ready(function(){
               $('.navbar').removeClass("sticky");
           }
       });
+      faqbox.forEach(faqbx => {
+            const icon = faqbx.querySelector('.icon');
+            const answer = faqbx.querySelector('.answer');
+      
+            faqbx.addEventListener('click', () => {
+                  if (icon.classList.contains('active')){
+                        icon.classList.remove('active');
+                        answer.style.maxHeight = null;
+                  }
+                  else{
+                        icon.classList.add('active');
+                        answer.style.maxHeight = answer.scrollHeight+'px';
+                  }
+            })
+      })
 });
 //show/hide faq answer
       
@@ -47,3 +64,6 @@ const closeNav = () => {
       menuBtn.style.display = "inline-block";
 }
 closeBtn.addEventListener('click', closeNav)
+
+
+

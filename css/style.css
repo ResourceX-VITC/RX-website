@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Prompt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@700&display=swap');
+
 *{
       margin: 0;
       padding: 0;
@@ -200,7 +202,7 @@ html{
       }
 }
 
-/* 1rem = 16px */
+/* /* 1rem = 16px */
 .container
 {
       width: var(--container-width-lg);
@@ -210,11 +212,7 @@ section
 {
       padding: 6rem 0;                             
 }
-section h2
-{
-      text-align: center;
-      margin-bottom: 4rem;
-}
+
 h1, h2, h3, h4, h5
 {
       line-height: 1.2;
@@ -264,7 +262,7 @@ img
 {
       background: var(--color-danger);
       color: var(--color-white);
-}
+} */
 
 /* =====================CATEGORIES=================== */
 .categories
@@ -381,7 +379,7 @@ img
 
 /* *************************  FAQs   ****************************/
 
-.faqs
+/* .faqs
 {
       background-color: var(--color-bg1);
       box-shadow: inset 0 0 3rem rgba(0, 0, 0, 0.5);
@@ -420,6 +418,80 @@ img
 .faq.open p
 {
       display: block;
+} */
+
+
+.faq{
+      background-color: #000;
+      display: flex;
+      color: white;
+      justify-content: center;
+      font-family: 'Outfit', sans-serif;
+      position: relative;
+}
+
+.faq-contents{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      max-width: 90vw;
+      gap: 15px;
+}
+
+.faq-title, .faq-boxes{
+      flex: 1;
+}
+
+
+.faq-title h2{
+      font-size: 76px;
+      font-weight: 600;
+      padding-bottom: 20px;
+      text-align: start;
+}
+
+.faq-boxes{
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      margin: 20px;
+
+}
+
+.faqbox{
+     display: flex;
+     flex-direction: column;
+     background-color: #161616;
+     padding: 20px;
+     border: rgb(107, 107, 107) 2px solid;
+     border-radius: 10px;
+     font-size: 18px;
+     cursor: pointer;
+     transition: all 0.2s ease-out;
+     justify-content:center;
+}
+
+.faqbox .question{
+      display: flex;
+      justify-content: space-between;
+}
+
+.faqbox .answer{
+      color: gray;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.2s;
+}
+
+.faqbox:hover{
+      border: white 2px solid;
+}
+
+.icon{
+      transition: 0.2s;
+}
+.icon.active{
+      transform: rotate(180deg);
 }
 
 /* ===================TESTIMONIALS =================*/
