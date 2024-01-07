@@ -114,7 +114,7 @@ html {
 .home {
       display: flex;
       /*background: linear-gradient(109.6deg, rgb(43, 1, 91) 13.4%, rgb(122, 2, 54) 100.2%);*/
-      background: url(/images/DSC04580.JPG);
+      background: url(../images/DSC04580.JPG);
       background-size: cover;
       background-attachment: fixed;
       color: white;
