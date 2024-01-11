@@ -51,6 +51,20 @@ html {
       transition: all 0.3 ease;
 }
 
+.navbar .logo img{
+      width: 10%;
+}
+.navbar:not(.sticky) img{
+      display: inline;
+}
+
+.navbar:not(.sticky) .logo h1{
+      display: none;
+}
+.navbar:is(.sticky) img{
+      display: none;
+}
+
 .navbar.sticky {
       padding: 15px 0;
       background: #000;
@@ -77,9 +91,10 @@ html {
       color: #f7c95b;
 
 }
-
+.navbar .menu{
+      display: flex;
+}
 .navbar .menu li {
-      display: none;
       display: inline-block;
 }
 
