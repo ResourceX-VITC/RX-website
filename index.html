@@ -36,13 +36,19 @@
 <body>
       <nav class="navbar">
             <div class="max-width">
-                  <div class="logo"><a href="#"><img src="images/ResourceX Logo.png" alt=""><h1>Resource<span>X</span></h1></a></div>
-                  <ul class="menu">
-                        <li><a href="#home" class="menu-btn">Home</a></li>
-                        <li><a href="#about" class="menu-btn">About</a></li>
-                        <li><a href="#events" class="menu-btn">Events</a></li>
-                        <li><a href="#contact" class="menu-btn">Contact</a></li>
-                  </ul>
+                  <div class="navbar-contents">
+                        <ul class="menu">
+                              <li><a href="#home" class="menu-btn">Home</a></li>
+                              <li><a href="#about" class="menu-btn">About</a></li>
+                              <li><a href="#events" class="menu-btn">Events</a></li>
+                        </ul>
+                        <div class="logo"><a href="#"><img src="images/ResourceX Logo.png" alt=""></a></div>
+                        <ul class="menu">
+                              <li><a href="/growth-summit.html" class="menu-btn">Growth Summit</a></li>
+                              <li><a href="#team" class="menu-btn">Team</a></li>
+                              <li><a href="#footer" class="menu-btn">Contact</a></li>
+                        </ul>
+                  </div>
             </div>
       </nav>
 
@@ -53,7 +59,7 @@
                               <h1>Resource<span>X</span></h1>
                         </div>
                         <div class="scroll-down">
-                              <a href="#events">
+                              <a href="#about">
                                     <div class="scroll-animation">
                                           <span></span>
                                           <span></span>
@@ -66,7 +72,19 @@
             </div>
       </section>
 
-
+      <section class="about" id="about">
+            <div class="about-content">
+                  <div class="blob-wrapper">
+                        <div class="blob-box"></div>
+                  </div>
+                  <div class="about-text">
+                        <h1>About Us</h1>
+                        <h5>Who we are</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores necessitatibus voluptatibus incidunt porro voluptatum rerum quia at sed dolorum commodi non magni voluptatem aut nihil culpa reiciendis quaerat, quae veritatis!</p>
+                        <button><a href="#footer">Get in touch</a></button>
+                  </div>
+            </div>
+      </section>
       <!--============================END OF THE CATEGORIES=============================-->
       <section class="events" id="events">
             <div class="events-page">
@@ -119,7 +137,7 @@
       </section>
       <!--============================END OF THE EVENTS=============================-->
 
-      <h1 class="team-title">Our Board Members</h1>
+      <h1 class="team-title" id="team">Our Board Members</h1>
 
       <section class="team">
             <div class="team-section">
@@ -367,25 +385,25 @@
       <!-- ====================END OF TESTIMONIALS============-->
 
 
-      <footer class="footer">
+      <footer class="footer" id="footer">
             <div class="footer-col">
                   <h1>Links</h1>
                   <ul class="links">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Courses</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#events">Events</a></li>
+                        <li><a href="#team">Team</a></li>
                   </ul>
             </div>
             <div class="footer-col">
 
-                  <img src="./images/ResourceX.jpg" class="resourcex_logo">
+                  <img src="./images/ResourceX Logo.png" class="resourcex_logo">
                   <h1>ResourceX</h1>
                   <p><i class="ri-double-quotes-l"></i>Born Leaders Play to Win<i class="ri-double-quotes-r"></i></p>
             </div>
             <div class="footer-col">
                   <h1>Contact Us</h1>
-                  <p>resourcex@gmail.com</p>
+                  <p class="email-add"><a href="mailto:resourcex@gmail.com">resourcex@gmail.com</a></p>
                   <ul class="socials">
                         
                         <li><a href="https://www.instagram.com/resourcex_vitcc/"><i class="ri-instagram-fill ri-xl"></i></a></li>
