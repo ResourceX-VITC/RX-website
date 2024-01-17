@@ -7,7 +7,7 @@
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      font-family: "Poppins", sans-serif;
+      font-family: "Poppins", sans-serif; 
       text-decoration: none;
 }
 html {
@@ -73,6 +73,7 @@ html {
 
 .navbar .logo img{
       width: 15%;
+      margin-top: 10px;
       
 }
 /* .navbar:not(.sticky) img{
@@ -158,13 +159,18 @@ html {
       left: 0;
       width: 0;
       height: 2px;
-      background: #fff;
+      background: #ebb842;
       transition: .3s;
 
 }
 
 .navbar .menu li a:hover::before {
       width: 100%;
+}
+
+.menu-btn{
+      margin-left: 10px;
+      margin-right: 10px;
 }
 
 /* home page styling*/
@@ -644,7 +650,8 @@ img {
 .event-page-desc {
       margin: 0 0 10vh 0;
       max-width: 75%;
-      color: #bd933a;
+      color: #f0c05a;
+      font-style: italic;
 }
 
 .event-cards {
@@ -951,8 +958,13 @@ img {
 .about-text{
       width: 550px;
       max-width: 100%;
-      padding: 0 30px;
+      padding: 0 10px;
+      margin-left: 20px;
       text-align: center;
+}
+
+.about-text strong{
+      font-style: bold;
 }
 .about-content{
       display: flex;
