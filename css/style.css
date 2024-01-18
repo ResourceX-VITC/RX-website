@@ -658,7 +658,7 @@ img {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
-      gap: 9vw;
+      gap: 8vw;
 }
 
 
@@ -759,7 +759,7 @@ img {
       border: 1px solid #fff;
       box-shadow: 0 0 0 4px #222,
             0 0 0 6px #fff;
-      transform: rotate(calc(360deg/6*var(--i)));
+      transform: rotate(calc(360deg/7*var(--i)));
       transform-origin: 340px;
       z-index: 100;
       overflow: hidden;
@@ -773,7 +773,7 @@ img {
       height: 100%;
       border-radius: 50%;
       object-fit: cover;
-      transform: rotate(calc(-360deg/6*var(--i)));
+      transform: rotate(calc(-360deg/7*var(--i)));
       transition: 0.5s;
       filter: grayscale(1);
 }
@@ -1055,5 +1055,14 @@ button:hover a{
       }
       100%{
             border-radius: 60% 40% 30% 70%/60% 30% 30% 60%;
+      }
+}
+
+@media (max-width:1500px){
+      .event-cards{
+            gap: 5vw;
+      }
+      .events{
+            margin: 0;
       }
 }
