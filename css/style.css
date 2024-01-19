@@ -7,34 +7,38 @@
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      font-family: "Poppins", sans-serif; 
+      font-family: "Poppins", sans-serif;
       text-decoration: none;
 }
+
 html {
       scroll-behavior: smooth;
       scrollbar-width: thin;
-      scrollbar-color:#BC984D transparent;
+      scrollbar-color: #BC984D transparent;
 
 }
-::-webkit-scrollbar{
+
+::-webkit-scrollbar {
       width: 8px;
       background-color: transparent;
       border-radius: 20px;
 }
-::-webkit-scrollbar-thumb{
+
+::-webkit-scrollbar-thumb {
       background-color: #545228;
       border-radius: 20px;
 }
 
-::-webkit-scrollbar-thumb:hover{
+::-webkit-scrollbar-thumb:hover {
       background-color: #c4c059;
       border-radius: 20px;
-      transition:0.2s ease-in ;
+      transition: 0.2s ease-in;
 }
 
-::-webkit-scrollbar-track{
+::-webkit-scrollbar-track {
       background-color: #222;
 }
+
 :root {
       --color-primary: #7A563A;
       --color-success: #00bf8e;
@@ -71,11 +75,12 @@ html {
       transition: all 0.3 ease;
 }
 
-.navbar .logo img{
+.navbar .logo img {
       width: 15%;
       margin-top: 10px;
-      
+
 }
+
 /* .navbar:not(.sticky) img{
       display: inline;
 }
@@ -97,18 +102,21 @@ html {
       align-items: center;
       justify-content: center;
 }
-.navbar-contents{
+
+.navbar-contents {
       display: flex;
       justify-content: space-between;
       text-align: center;
       align-items: center;
-      
+
 }
-.navbar .logo{
+
+.navbar .logo {
       align-items: center;
       text-align: center;
       display: flex;
 }
+
 .navbar .logo a {
       color: #fff;
       font-size: 35px;
@@ -127,7 +135,8 @@ html {
       color: #f7c95b;
 
 }
-.navbar .menu{
+
+.navbar .menu {
       display: flex;
       flex: 1;
       justify-content: space-evenly;
@@ -168,7 +177,7 @@ html {
       width: 100%;
 }
 
-.menu-btn{
+.menu-btn {
       margin-left: 10px;
       margin-right: 10px;
 }
@@ -561,9 +570,11 @@ img {
       list-style-type: none;
       padding: 10px;
 }
-.footer-col .links li:hover{
+
+.footer-col .links li:hover {
       text-decoration: underline;
 }
+
 .footer-col {
       display: flex;
       flex-direction: column;
@@ -586,7 +597,7 @@ img {
 
 }
 
-.email-add:hover{
+.email-add:hover {
       text-decoration: underline;
 }
 
@@ -638,6 +649,7 @@ img {
       align-items: center;
       max-width: 80%;
       text-align: center;
+      height: 100vh;
 }
 
 .event-title {
@@ -655,41 +667,68 @@ img {
 }
 
 .event-cards {
+      position: relative;
       display: flex;
-      flex-wrap: wrap;
       justify-content: space-between;
       gap: 8vw;
+      padding-bottom: 30px;
 }
 
 
-.card-image {
-      grid-area: image;
-      border-top-left-radius: 15px;
-      border-top-right-radius: 15px;
-      background-size: cover;
-      overflow: hidden;
+.event-card{
       position: relative;
-      z-index: -1;
-      /* Move the image behind the border */
-}
-
-.event-card {
-      display: grid;
-      grid-template-columns: 300px;
-      grid-template-rows: 210px 300;
-      grid-template-areas: "image" "text" "more";
+      display: flex;
+      flex-direction: column;
       border-radius: 18px;
       text-align: center;
       overflow: hidden;
-      position: relative;
       border: white 2px solid;
+      flex: 1;
+      height: 320px;
 }
+
+
 
 .card-text {
-      grid-area: text;
-      margin: 25px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      top: 60%;
+      background-color: rgba(0, 0, 0, 0.8);
+      text-align: center;  
+
+}
+.card-text-contents{
+      margin: 20px;
+      align-items: center;
+      &>p{
+           opacity: 0;
+      }
 }
 
+.event-card:hover{
+      .card-text-contents{
+            &>p{
+                  opacity: 1;
+            }
+      }
+      .card-text{
+            position: static;
+      }
+      transition: all 0.5s ease-in-out;
+}
+
+.event-card:nth-child(1):hover{
+      height: 650px;
+}
+
+.event-card:nth-child(2):hover{
+      height: 600px;
+}
+.event-card:nth-child(3):hover{
+      height: 620px;
+}
 .card-text .date {
       font-size: 13px;
       color: #b5b5b5;
@@ -710,7 +749,7 @@ img {
       line-height: 22px;
 }
 
-.team-title{
+.team-title {
       text-align: center;
       font-size: 62px;
       padding-top: 50px;
@@ -726,14 +765,15 @@ img {
       background-color: #222;
 }
 
-.team-section {      
+.team-section {
       position: relative;
       width: 600px;
       height: 600px;
       border: 2px solid #fff;
       border-radius: 50%;
 }
-.team-section h1{
+
+.team-section h1 {
       font-size: 76px;
       color: #f7c95b;
 
@@ -868,14 +908,14 @@ img {
       object-fit: cover;
 }
 
-.contentBx .teams-card .textBx{
+.contentBx .teams-card .textBx {
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
 }
 
-.contentBx .teams-card .textBx h2{
+.contentBx .teams-card .textBx h2 {
       position: relative;
       font-size: 1.25em;
       font-weight: 600;
@@ -885,25 +925,25 @@ img {
       text-align: center;
 }
 
-.contentBx .teams-card .textBx h2 span{
+.contentBx .teams-card .textBx h2 span {
       font-size: 0.65em;
       color: #fff;
       font-weight: 500;
       letter-spacing: 0.1em;
 }
 
-.contentBx .teams-card .textBx .sci{
+.contentBx .teams-card .textBx .sci {
       position: relative;
       display: flex;
       gap: 7px;
       margin-top: 10px;
 }
 
-.contentBx .teams-card .textBx .sci li{
+.contentBx .teams-card .textBx .sci li {
       list-style: none;
 }
 
-.contentBx .teams-card .textBx .sci li a{
+.contentBx .teams-card .textBx .sci li a {
       position: relative;
       width: 30px;
       height: 30px;
@@ -939,7 +979,7 @@ img {
 
 
 /*about section*/
-.about{
+.about {
       width: 100%;
       height: 100vh;
       background-color: #222;
@@ -950,12 +990,12 @@ img {
 
 }
 
-.about img{
+.about img {
       width: 50%;
       height: auto;
 }
 
-.about-text{
+.about-text {
       width: 550px;
       max-width: 100%;
       padding: 0 10px;
@@ -963,10 +1003,11 @@ img {
       text-align: center;
 }
 
-.about-text strong{
+.about-text strong {
       font-style: bold;
 }
-.about-content{
+
+.about-content {
       display: flex;
       max-width: 95%;
       margin: 0 auto;
@@ -974,15 +1015,15 @@ img {
       justify-content: space-around;
 }
 
-.about-text h1{
+.about-text h1 {
       color: white;
       font-size: 78px;
       margin-bottom: 20px;
       text-transform: capitalize;
-      color:#f7c95b ;
+      color: #f7c95b;
 }
 
-.about-text h5{
+.about-text h5 {
       color: white;
       font-size: 25px;
       margin-bottom: 25px;
@@ -990,8 +1031,8 @@ img {
       letter-spacing: 2px;
 }
 
-.about-text p{
-      color:white;
+.about-text p {
+      color: white;
       font-size: 18px;
       line-height: 28px;
       letter-spacing: 1px;
@@ -999,7 +1040,7 @@ img {
       text-align: start;
 }
 
-.about button{
+.about button {
       background-color: #ffcc74;
       border: 2px solid transparent;
       text-decoration: none;
@@ -1008,14 +1049,14 @@ img {
       border-radius: 30px;
       font-size: 17px;
       font-weight: bold;
-      
+
 }
 
-.about button a{
-      color:black;
+.about button a {
+      color: black;
 }
 
-button:hover{
+button:hover {
       transform: scale(1.2);
       background-color: transparent;
       border: 2px solid #ffcc74;
@@ -1024,45 +1065,48 @@ button:hover{
       color: white;
 }
 
-button:hover a{
+button:hover a {
       color: white;
 }
 
-.blob-wrapper{
+.blob-wrapper {
       display: flex;
       align-items: center;
       justify-content: center;
       height: 100vh;
 }
 
-.blob-box{
+.blob-box {
       background: url(../images/DSC04580.JPG);
-      background-size:cover;
+      background-size: cover;
       background-position: center center;
       height: 450px;
       width: 550px;
-      box-shadow:0 20px 5px 5px rgba(0,0,0,0.2);
+      box-shadow: 0 20px 5px 5px rgba(0, 0, 0, 0.2);
       animation: blob 5s ease-in-out infinite;
       transition: all 1s ease-in-out;
 }
 
-@keyframes blob{
-      0%{
+@keyframes blob {
+      0% {
             border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
       }
-      50%{
+
+      50% {
             border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
       }
-      100%{
+
+      100% {
             border-radius: 60% 40% 30% 70%/60% 30% 30% 60%;
       }
 }
 
-@media (max-width:1500px){
-      .event-cards{
+@media (max-width:1500px) {
+      .event-cards {
             gap: 5vw;
       }
-      .events{
+
+      .events {
             margin: 0;
       }
 }
