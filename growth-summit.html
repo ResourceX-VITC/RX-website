@@ -4,15 +4,147 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Growth Summit</title>
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="./css/summit.css">
 </head>
 <body>
-    <section class="home">
-        <a href="/"><span><</span></a>
-        <div class="main">
-            
-            <h1>Coming Soon</h1>
+  <!--============================SECTION FOR GRADIENT AND TITLE=============================-->
+  <section class="grad" id="grad">
+      <div class="overlay">
+        <h1>Our Speakers</h1>
+  </div>
+</section>
+<!--============================IAMGE AND TEXT FOR SPEAKERS============================-->
+<section class="speakers" id="speakers">
+  <h2 class="speaker-title"></h2>
+  <div class="app-container">
+    <div class="app">
+      <div class="cardList">
+        <button class="cardList__btn btn btn--left">
+          <div class="icon">
+            <svg>
+              <use xlink:href="#arrow-left"></use>
+            </svg>
+          </div>
+        </button>
+    
+        <div class="cards__wrapper">
+          <div class="card current--card">
+            <div class="card__image">
+              <img src="https://img.freepik.com/free-vector/business-man-character_1308-102261.jpg?size=626&ext=jpg&ga=GA1.1.1826414947.1700006400&semt=ais" alt=""/>
+            </div>
+          </div>
+    
+          <div class="card next--card">
+            <div class="card__image">
+              <img src="https://img.freepik.com/free-vector/business-man-character_1308-102261.jpg?size=626&ext=jpg&ga=GA1.1.1826414947.1700006400&semt=ais" alt="" />
+            </div>
+          </div>
+    
+          <div class="card previous--card">
+            <div class="card__image">
+              <img src="https://img.freepik.com/free-vector/business-man-character_1308-102261.jpg?size=626&ext=jpg&ga=GA1.1.1826414947.1700006400&semt=ais" alt=""/>
+            </div>
+          </div>
         </div>
-    </section>
+    
+        <button class="cardList__btn btn btn--right">
+          <div class="icon">
+            <svg>
+              <use xlink:href="#arrow-right"></use>
+            </svg>
+          </div>
+        </button>
+      </div>
+    
+      <div class="infoList">
+        <div class="info__wrapper">
+          <div class="info current--info">
+            <h1 class="speaker-name">Speaker 1</h1>
+            <p class="description">abcd1234</p>
+          </div>
+    
+          <div class="info next--info">
+            <h1 class="speaker-name">Speaker 2</h1>
+            <p class="description">abcd1234</p>
+          </div>
+    
+          <div class="info previous--info">
+            <h1 class="speaker-name">Speaker 3</h1>
+            <p class="description">abcd1234</p>
+          </div>
+        </div>
+      </div>
+      </div>
+    
+    
+      <div class="app__bg">
+        <div class="app__bg__image current--image">
+          <img src="/Users/kashishgidwani/Downloads/bg.png" alt="" />
+        </div>
+        <div class="app__bg__image next--image">
+          <img src="/Users/kashishgidwani/Downloads/bg1.png" alt="" />
+        </div>
+        <div class="app__bg__image previous--image">
+          <img src="/Users/kashishgidwani/Downloads/bg2.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <!--============================"LOADING"=============================-->
+    <div class="loading__wrapper">
+      <div class="loader--text">Loading...</div>
+      <div class="loader">
+        <span></span>
+      </div>
+    </div>
+    
+    <!--============================ARROWS=============================-->
+    <svg class="icons" style="display: none;">
+      <symbol id="arrow-left" xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'>
+        <polyline points='328 112 184 256 328 400'
+               style='fill:none;stroke:#910A67;stroke-linecap:round;stroke-linejoin:round;stroke-width:48px' />
+      </symbol>
+      <symbol id="arrow-right" xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'>
+        <polyline points='184 112 328 256 184 400'
+               style='fill:none;stroke:#910A67;stroke-linecap:round;stroke-linejoin:round;stroke-width:48px' />
+      </symbol>
+    </svg>
+  </section> 
+  <footer class="footer" id="footer">
+    <div class="footer-col">
+          <h1>Student Coordinators</h1>
+          <ul class="student-coordinator">
+                <li>Student Coordinator 1
+                  <ul>Phone number</ul>
+                  <ul>LinkedIn</ul>
+                </li>
+                <li>Student Coordinator 2
+                  <ul>Phone number</ul>
+                  <ul>LinkedIn</ul>
+                </li>
+          </ul>
+    </div>
+    <div class="footer-col">
+          <img src="./images/ResourceX Logo.png" class="resourcex_logo">
+          <h1>ResourceX</h1>
+          <p><i class="ri-double-quotes-l"></i>Born Leaders Play to Win<i class="ri-double-quotes-r"></i></p>
+    </div>
+    <div class="footer-col">
+          <h1>Posts on Growth Summit</h1>
+          <ul class="socials">
+            <li><a href="" class="socials-icon"><i class='bx bxl-linkedin'></i></a></li>
+            <li><a href="" class="socials-icon"><i class='bx bxl-instagram' ></i></a></li>
+          </ul>
+    </div>
+</footer>
+    <script type="text/javascript" src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/gsap.min.js"></script>
+    <script src="./summit.js"></script>
+
+<div class="wrapper">
+    <div class="gradient gradient-1"></div>
+    <div class="gradient gradient-2"></div>
+    <div class="gradient gradient-3"></div>
+</div>
 </body>
 </html>
