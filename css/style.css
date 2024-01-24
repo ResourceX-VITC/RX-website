@@ -13,11 +13,11 @@
 
 html {
       scroll-behavior: smooth;
-      scrollbar-width: thin;
-      scrollbar-color: #BC984D transparent;
+      scrollbar-width:thin;
+      scrollbar-color: #BC984D #222;
 
 }
-
+   
 ::-webkit-scrollbar {
       width: 8px;
       background-color: transparent;
