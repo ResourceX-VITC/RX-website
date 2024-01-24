@@ -803,6 +803,7 @@ img {
       transform-origin: 340px;
       z-index: 100;
       overflow: hidden;
+      rotate: 38deg;
 }
 
 .icon .imgBx img {
@@ -816,6 +817,7 @@ img {
       transform: rotate(calc(-360deg/7*var(--i)));
       transition: 0.5s;
       filter: grayscale(1);
+      rotate:-38deg;
 }
 
 .icon .imgBx.active {
