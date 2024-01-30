@@ -685,9 +685,8 @@ img {
       border: white 2px solid;
       flex: 1;
       height: 320px;
+      transition: all 0.5s ease-in-out;
 }
-
-
 
 .card-text {
       position: absolute;
@@ -697,6 +696,7 @@ img {
       top: 60%;
       background-color: rgba(0, 0, 0, 0.8);
       text-align: center;  
+      
 
 }
 .card-text-contents{
@@ -892,7 +892,7 @@ img {
       gap: 15px;
 }
 
-.contentBx .teams-card .imgBx {
+.contentBx .teams-card .imgBx-team {
       position: relative;
       width: 150px;
       height: 150px;
@@ -901,7 +901,7 @@ img {
 
 }
 
-.contentBx .teams-card .imgBx img {
+.contentBx .teams-card .imgBx-team img {
       position: absolute;
       top: 0;
       left: 0;
