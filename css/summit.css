@@ -4,7 +4,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box; 
     font-family: 'montserrat', sans-serif;
     cursor: none;
 }
@@ -325,7 +325,9 @@ li {
     text-decoration: none;
 }
 
-
+.home-backlink{
+    text-decoration: none;
+}
 
 .home {
     height: 100vh;
@@ -682,12 +684,11 @@ li {
     text-align: center;
     margin: auto;
     padding-top: 20px;
-    font-family: 'Rubik Doodle Shadow', sans-serif;
 }
 
 .venue-contents h4 {
     margin: 30px;
-    font-size: 36px;
+    font-size: 30px;
 }
 
 .venue-contents h4:nth-of-type(1) {
@@ -715,7 +716,6 @@ li {
 .topics h1 {
     color: #c8b53c;
     font-size: 56px;
-    font-family: 'Rubik Doodle Shadow', sans-serif;
     overflow: hidden;
     border-right: .15em solid #c8b53c;
     white-space: nowrap;
