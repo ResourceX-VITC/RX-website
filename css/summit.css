@@ -538,6 +538,17 @@ li {
     font-size: 48px;
 }
 
+.intro{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.img1{
+    width: 120%;
+}
+
+.img2{
+    max-width: 100%;
+}
 .benefits {
     height: 60vh;
     background-color: #000;
